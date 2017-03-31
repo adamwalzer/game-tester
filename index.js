@@ -111,7 +111,6 @@ window.addEventListener('game-event', function (e) {
     if (!data) return;
 
     if (data.name === 'init') {
-        console.log('init', gameData);
         e.respond(gameData);
     } else if (data.name === 'save') {
         gameData = data;
